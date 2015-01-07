@@ -29,7 +29,6 @@ namespace VideoStore.ECommerce
                     .DefiningEventsAs(t => t.Namespace != null && t.Namespace.StartsWith("VideoStore") && t.Namespace.EndsWith("Events"))
                     .DefiningMessagesAs(t => t.Namespace != null && t.Namespace.StartsWith("VideoStore") && t.Namespace.EndsWith("RequestResponse"))
                     .DefiningEncryptedPropertiesAs(p => p.Name.StartsWith("Encrypted"));
-            config.TraceLogger();
             config.UseTransport<AzureServiceBusTransport>();
             config.UsePersistence<AzureStoragePersistence>();
             config.PurgeOnStartup(true);
