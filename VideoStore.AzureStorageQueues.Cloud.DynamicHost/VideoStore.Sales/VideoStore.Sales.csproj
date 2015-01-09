@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionic.Zip">
-      <HintPath>..\packages\NServiceBus.Hosting.Azure.6.1.0\lib\net45\Ionic.Zip.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Hosting.Azure.6.1.3\lib\net45\Ionic.Zip.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
@@ -74,11 +74,11 @@
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NServiceBus.Azure">
-      <HintPath>..\packages\NServiceBus.Azure.6.1.0\lib\net45\NServiceBus.Azure.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Azure.6.1.3\lib\net45\NServiceBus.Azure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NServiceBus.Azure.Transports.WindowsAzureStorageQueues">
-      <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.6.1.0\lib\net45\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.6.1.3\lib\net45\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NServiceBus.Core">
@@ -86,11 +86,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="NServiceBus.Hosting.Azure">
-      <HintPath>..\packages\NServiceBus.Hosting.Azure.6.1.0\lib\net45\NServiceBus.Hosting.Azure.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Hosting.Azure.6.1.3\lib\net45\NServiceBus.Hosting.Azure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NServiceBus.Hosting.Azure.HostProcess">
-      <HintPath>..\packages\NServiceBus.Hosting.Azure.HostProcess.6.1.0\lib\net45\NServiceBus.Hosting.Azure.HostProcess.exe</HintPath>
+      <HintPath>..\packages\NServiceBus.Hosting.Azure.HostProcess.6.1.3\lib\net45\NServiceBus.Hosting.Azure.HostProcess.exe</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -107,7 +107,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Topshelf">
-      <HintPath>..\packages\NServiceBus.Hosting.Azure.HostProcess.6.1.0\lib\net45\Topshelf.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Hosting.Azure.HostProcess.6.1.3\lib\net45\Topshelf.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
