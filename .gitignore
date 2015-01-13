@@ -109,3 +109,5 @@ UpgradeLog*.XML
 
 # Artifacts Directory
 artifacts
+
+**/nsb_log*.txt
