@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="VideoStore" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-01.2.3">
+<ServiceConfiguration serviceName="VideoStore" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-06.2.4">
   <Role name="VideoStore.ECommerce">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="Yves" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDlKGKjAUPSPShFuSThixtcwDQYJKoZIhvcNAQEBBQAEggEAutG3kNaecOaofOZH9o36QayezrKTkUhL24boDoXyTNNa0MiRnKSre0hSQ46Uc3hhEqYIUJFEhbm6vEL0Whj83Q1TMeBhRjYP1zXe1aOeg3V1onRnFT2ZQiAtIpVRCMTNPUzhbnZWezFcxJT5TgXil1unWiF8ek5bwFqxgMo8fmwVy28IXhyX511vJDoT2/lAR0513L7pp0koOpjWBS8pQtTLc/0+zP8GVECyucbh5dbRN1wXio0ksgnGpYJpXMVGEXjxcMANiEbUXnySL0tFHfIy+GVhaOlNIcUdgarue9YLhz9wyMU5IIu5TBBKUORCNyawsaTtiqAzTgSJGOJUlzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECOL47fdBQjplgBCPsKjucIYyyd3HRkxShPQN" />
@@ -16,7 +15,6 @@
   <Role name="VideoStore.Host">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="DynamicHostControllerConfig.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="DynamicHostControllerConfig.AutoUpdate" value="true" />
       <Setting name="DynamicHostControllerConfig.UpdateInterval" value="5000" />
