@@ -45,7 +45,7 @@
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>VideoStore.ECommerce</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>False</UpdateDiagnosticsConnectionStringOnPublish>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
     <ProjectReference Include="..\VideoStore.Host\VideoStore.Host.csproj">
       <Name>VideoStore.Host</Name>
@@ -75,9 +75,6 @@
     <Content Include="VideoStore.ECommerceContent\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="VideoStore.HostContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="VideoStore.OperationsContent\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>
@@ -87,6 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <PublishProfile Include="Profiles\nservicebusProduction.azurePubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DiagnosticsConfiguration Include="VideoStore.HostContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

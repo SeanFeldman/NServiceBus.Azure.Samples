@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="VideoStore" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-01.2.3">
+<ServiceDefinition name="VideoStore" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
   <WebRole name="VideoStore.ECommerce" vmsize="Small">
     <Sites>
       <Site name="Web">
@@ -12,27 +12,22 @@
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
   </WebRole>
   <WorkerRole name="VideoStore.Sales" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
   </WorkerRole>
   <WorkerRole name="VideoStore.ContentManagement" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
   </WorkerRole>
   <WorkerRole name="VideoStore.CustomerRelations" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
   </WorkerRole>
   <WorkerRole name="VideoStore.Operations" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
   </WorkerRole>
 </ServiceDefinition>
