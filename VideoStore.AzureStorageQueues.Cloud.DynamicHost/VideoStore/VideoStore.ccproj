@@ -58,34 +58,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Profiles" />
-    <Folder Include="VideoStore.ContentManagementContent\" />
-    <Folder Include="VideoStore.CustomerRelationsContent\" />
     <Folder Include="VideoStore.ECommerceContent\" />
     <Folder Include="VideoStore.HostContent\" />
-    <Folder Include="VideoStore.OperationsContent\" />
-    <Folder Include="VideoStore.SalesContent\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="VideoStore.ContentManagementContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.CustomerRelationsContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.ECommerceContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.OperationsContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.SalesContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <PublishProfile Include="Profiles\nservicebusProduction.azurePubxml" />
   </ItemGroup>
   <ItemGroup>
+    <DiagnosticsConfiguration Include="VideoStore.ECommerceContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="VideoStore.HostContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
