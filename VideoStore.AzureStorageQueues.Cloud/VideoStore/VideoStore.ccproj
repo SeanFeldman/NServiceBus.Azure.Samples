@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>2.3</ProductVersion>
+    <ProductVersion>2.5</ProductVersion>
     <ProjectGuid>f5e2eefe-ffc5-4f16-a4e4-1ba1dc5fb0f6</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -44,7 +44,7 @@
       <Private>True</Private>
       <RoleType>Worker</RoleType>
       <RoleName>VideoStore.ContentManagement</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>False</UpdateDiagnosticsConnectionStringOnPublish>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
     <ProjectReference Include="..\VideoStore.CustomerRelations\VideoStore.CustomerRelations.csproj">
       <Name>VideoStore.CustomerRelations</Name>
@@ -52,7 +52,7 @@
       <Private>True</Private>
       <RoleType>Worker</RoleType>
       <RoleName>VideoStore.CustomerRelations</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>False</UpdateDiagnosticsConnectionStringOnPublish>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
     <ProjectReference Include="..\VideoStore.ECommerce\VideoStore.ECommerce.csproj">
       <Name>VideoStore.ECommerce</Name>
@@ -60,7 +60,7 @@
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>VideoStore.ECommerce</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>False</UpdateDiagnosticsConnectionStringOnPublish>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
     <ProjectReference Include="..\VideoStore.Operations\VideoStore.Operations.csproj">
       <Name>VideoStore.Operations</Name>
@@ -68,7 +68,7 @@
       <Private>True</Private>
       <RoleType>Worker</RoleType>
       <RoleName>VideoStore.Operations</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>False</UpdateDiagnosticsConnectionStringOnPublish>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
     <ProjectReference Include="..\VideoStore.Sales\VideoStore.Sales.csproj">
       <Name>VideoStore.Sales</Name>
@@ -76,7 +76,7 @@
       <Private>True</Private>
       <RoleType>Worker</RoleType>
       <RoleName>VideoStore.Sales</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>False</UpdateDiagnosticsConnectionStringOnPublish>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -88,29 +88,19 @@
     <Folder Include="VideoStore.SalesContent\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="VideoStore.ContentManagementContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.CustomerRelationsContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.ECommerceContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.OperationsContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VideoStore.SalesContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
+    <PublishProfile Include="Profiles\nservicebusProduction.azurePubxml" />
   </ItemGroup>
   <ItemGroup>
-    <PublishProfile Include="Profiles\nservicebusProduction.azurePubxml" />
+    <DiagnosticsConfiguration Include="VideoStore.ContentManagementContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="VideoStore.CustomerRelationsContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="VideoStore.ECommerceContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="VideoStore.OperationsContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="VideoStore.SalesContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
-    <CloudExtensionsDir Condition=" '$(CloudExtensionsDir)' == '' ">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\2.3\</CloudExtensionsDir>
+    <CloudExtensionsDir Condition=" '$(CloudExtensionsDir)' == '' ">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\2.5\</CloudExtensionsDir>
   </PropertyGroup>
   <Import Project="$(CloudExtensionsDir)Microsoft.WindowsAzure.targets" />
 </Project>

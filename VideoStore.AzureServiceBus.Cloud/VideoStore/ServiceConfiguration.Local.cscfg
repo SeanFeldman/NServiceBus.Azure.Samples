@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="VideoStore" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-01.2.3">
+<ServiceConfiguration serviceName="VideoStore" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-06.2.4">
   <Role name="VideoStore.ECommerce">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="NServiceBus" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECsI9da7KzGLSEmhunxyNSgwDQYJKoZIhvcNAQEBBQAEggEAkHMXRhgu2a5X4eDSfcSIsHS9hInsLoDxkBAHZ6KeXggHoZ1J2kNoe1S7He4+D3uyfZOTGmH3jKTOFIMFfHFu/rF8tGGQAQUb8X1iorablctMl3+jfSB8pZXMgIToubAKrVex7VgEy/SweGVDar2xV6gl0X8L/8fbdFAodOjp+LJRWnxF/vA+ESPmK/TeBFYIpoErqhoO6GbZMxHfRKUdasYDHxQmrw1RuGINoalXQ5X3m0vhY4sSNS5+5uACYWiE5inx+VQzyaq754IyCqXLoNRpMJw0xUqiIfeTRp8opv9oF9BBeNW6ZzKp31qGp/PgQBBTrPGeuWc0YCtlLoIK0zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAAUZdVTuS4cgBA5doEhDXYxmKgU18DqS0gt" />
@@ -16,7 +15,6 @@
   <Role name="VideoStore.Sales">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="NServiceBus" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECsI9da7KzGLSEmhunxyNSgwDQYJKoZIhvcNAQEBBQAEggEAkHMXRhgu2a5X4eDSfcSIsHS9hInsLoDxkBAHZ6KeXggHoZ1J2kNoe1S7He4+D3uyfZOTGmH3jKTOFIMFfHFu/rF8tGGQAQUb8X1iorablctMl3+jfSB8pZXMgIToubAKrVex7VgEy/SweGVDar2xV6gl0X8L/8fbdFAodOjp+LJRWnxF/vA+ESPmK/TeBFYIpoErqhoO6GbZMxHfRKUdasYDHxQmrw1RuGINoalXQ5X3m0vhY4sSNS5+5uACYWiE5inx+VQzyaq754IyCqXLoNRpMJw0xUqiIfeTRp8opv9oF9BBeNW6ZzKp31qGp/PgQBBTrPGeuWc0YCtlLoIK0zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAAUZdVTuS4cgBA5doEhDXYxmKgU18DqS0gt" />
@@ -30,7 +28,6 @@
   <Role name="VideoStore.ContentManagement">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="NServiceBus" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECsI9da7KzGLSEmhunxyNSgwDQYJKoZIhvcNAQEBBQAEggEAkHMXRhgu2a5X4eDSfcSIsHS9hInsLoDxkBAHZ6KeXggHoZ1J2kNoe1S7He4+D3uyfZOTGmH3jKTOFIMFfHFu/rF8tGGQAQUb8X1iorablctMl3+jfSB8pZXMgIToubAKrVex7VgEy/SweGVDar2xV6gl0X8L/8fbdFAodOjp+LJRWnxF/vA+ESPmK/TeBFYIpoErqhoO6GbZMxHfRKUdasYDHxQmrw1RuGINoalXQ5X3m0vhY4sSNS5+5uACYWiE5inx+VQzyaq754IyCqXLoNRpMJw0xUqiIfeTRp8opv9oF9BBeNW6ZzKp31qGp/PgQBBTrPGeuWc0YCtlLoIK0zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAAUZdVTuS4cgBA5doEhDXYxmKgU18DqS0gt" />
@@ -43,7 +40,6 @@
   <Role name="VideoStore.CustomerRelations">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="NServiceBus" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECsI9da7KzGLSEmhunxyNSgwDQYJKoZIhvcNAQEBBQAEggEAkHMXRhgu2a5X4eDSfcSIsHS9hInsLoDxkBAHZ6KeXggHoZ1J2kNoe1S7He4+D3uyfZOTGmH3jKTOFIMFfHFu/rF8tGGQAQUb8X1iorablctMl3+jfSB8pZXMgIToubAKrVex7VgEy/SweGVDar2xV6gl0X8L/8fbdFAodOjp+LJRWnxF/vA+ESPmK/TeBFYIpoErqhoO6GbZMxHfRKUdasYDHxQmrw1RuGINoalXQ5X3m0vhY4sSNS5+5uACYWiE5inx+VQzyaq754IyCqXLoNRpMJw0xUqiIfeTRp8opv9oF9BBeNW6ZzKp31qGp/PgQBBTrPGeuWc0YCtlLoIK0zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAAUZdVTuS4cgBA5doEhDXYxmKgU18DqS0gt" />
@@ -56,7 +52,6 @@
   <Role name="VideoStore.Operations">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="NServiceBus" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECsI9da7KzGLSEmhunxyNSgwDQYJKoZIhvcNAQEBBQAEggEAkHMXRhgu2a5X4eDSfcSIsHS9hInsLoDxkBAHZ6KeXggHoZ1J2kNoe1S7He4+D3uyfZOTGmH3jKTOFIMFfHFu/rF8tGGQAQUb8X1iorablctMl3+jfSB8pZXMgIToubAKrVex7VgEy/SweGVDar2xV6gl0X8L/8fbdFAodOjp+LJRWnxF/vA+ESPmK/TeBFYIpoErqhoO6GbZMxHfRKUdasYDHxQmrw1RuGINoalXQ5X3m0vhY4sSNS5+5uACYWiE5inx+VQzyaq754IyCqXLoNRpMJw0xUqiIfeTRp8opv9oF9BBeNW6ZzKp31qGp/PgQBBTrPGeuWc0YCtlLoIK0zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAAUZdVTuS4cgBA5doEhDXYxmKgU18DqS0gt" />

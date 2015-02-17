@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoStore.Messages", "VideoStore.Messages\VideoStore.Messages.csproj", "{59F2BA7E-4DA5-49F8-9DBC-520FA99F4679}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoStore.ECommerce", "VideoStore.ECommerce\VideoStore.ECommerce.csproj", "{F295D85E-4447-44E4-A9CC-3E017CF2B0D8}"
