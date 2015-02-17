@@ -111,7 +111,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-      <Private>True</Private>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\VideoStore.ContentManagement\DebugFlagMutator.cs">
