@@ -1,0 +1,362 @@
+﻿2015-02-09 21:08:46.529 INFO  DefaultFactory Logging to 'C:\GitHub\nsb\NServiceBus.Azure.Samples\VideoStore.AzureServiceBus.OnPremises\VideoStore.ECommerce\App_Data\' with level Info
+2015-02-09 21:08:46.686 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Sagas' storage.
+2015-02-09 21:08:46.689 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Timeouts' storage.
+2015-02-09 21:08:46.693 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Subscriptions' storage.
+2015-02-09 21:08:46.696 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+Outbox' storage.
+2015-02-09 21:08:46.700 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'NServiceBus.Persistence.StorageType+GatewayDeduplication' storage.
+2015-02-09 21:09:24.553 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 2015-08-18 00:00:00
+2015-02-09 21:09:24.589 INFO  NServiceBus.Features.UnicastBus Number of messages found: 10
+2015-02-09 21:09:24.625 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'audit' if needed
+2015-02-09 21:09:24.631 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'audit' if needed
+2015-02-09 21:09:24.665 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'audit-DEVMBP'
+2015-02-09 21:09:24.669 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'audit-DEVMBP'
+2015-02-09 21:09:25.645 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'audit-DEVMBP' does not exist
+2015-02-09 21:09:26.187 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'audit-DEVMBP' created
+2015-02-09 21:09:26.192 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'audit' if needed
+2015-02-09 21:09:26.198 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'audit' as it does not correspond to the local address
+2015-02-09 21:09:26.202 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'VideoStore.ECommerce-DEVMBP' if needed
+2015-02-09 21:09:26.206 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'VideoStore.ECommerce-DEVMBP' if needed
+2015-02-09 21:09:26.209 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.ECommerce-DEVMBP'
+2015-02-09 21:09:26.212 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'VideoStore.ECommerce-DEVMBP'
+2015-02-09 21:09:27.048 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.ECommerce-DEVMBP' does not exist
+2015-02-09 21:09:27.527 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.ECommerce-DEVMBP' created
+2015-02-09 21:09:27.533 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'VideoStore.ECommerce-DEVMBP' if needed
+2015-02-09 21:09:27.542 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Checking cache for existence of the topic 'VideoStore.ECommerce-DEVMBP.events'
+2015-02-09 21:09:27.547 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Checking namespace for existence of the topic 'VideoStore.ECommerce-DEVMBP.events'
+2015-02-09 21:09:28.169 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Determined that the topic 'VideoStore.ECommerce-DEVMBP.events' does not exist
+2015-02-09 21:09:28.768 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicCreator Topic 'VideoStore.ECommerce-DEVMBP.events' created
+2015-02-09 21:09:28.784 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'error' if needed
+2015-02-09 21:09:28.792 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'error' if needed
+2015-02-09 21:09:28.802 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'error-DEVMBP'
+2015-02-09 21:09:28.811 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'error-DEVMBP'
+2015-02-09 21:09:29.477 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'error-DEVMBP' does not exist
+2015-02-09 21:09:29.969 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'error-DEVMBP' created
+2015-02-09 21:09:29.973 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'error' if needed
+2015-02-09 21:09:29.977 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'error' as it does not correspond to the local address
+2015-02-09 21:09:29.994 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopologyCreator Going to create topology for address 'VideoStore.ECommerce-DEVMBP.Retries' if needed
+2015-02-09 21:09:30.005 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create queue for address 'VideoStore.ECommerce-DEVMBP.Retries' if needed
+2015-02-09 21:09:30.014 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.ECommerce-DEVMBP.Retries'
+2015-02-09 21:09:30.020 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'VideoStore.ECommerce-DEVMBP.Retries'
+2015-02-09 21:09:31.022 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.ECommerce-DEVMBP.Retries' does not exist
+2015-02-09 21:09:31.614 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.ECommerce-DEVMBP.Retries' created
+2015-02-09 21:09:31.623 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Going to create topic for address 'VideoStore.ECommerce-DEVMBP.Retries' if needed
+2015-02-09 21:09:31.635 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.QueueAndTopicByEndpoint.QueueAndTopicByEndpointTopology Did not create topic for address  'VideoStore.ECommerce-DEVMBP.Retries' as it does not correspond to the local address
+2015-02-09 21:09:31.685 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'DEVMBP\sean' to group 'Performance Monitor Users' because the user is already in group.
+2015-02-09 21:09:31.698 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: DefaultTopology
+Version: 6.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AzureServiceBusTransportConfiguration
+Version: 6.2.0
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalErrorHandling
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ErrorSubscribers
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomSerialization
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: UnicastBus
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: XmlSerialization
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -XmlSerialization not enable since serialization definition not detected.
+
+Name: MsmqTransportConfigurator
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: TimeoutManager
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.0
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: [ForwarderFaultManager]
+Startup Tasks: None
+
+Name: DataBusFileBased
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.0
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+
+2015-02-09 21:09:31.712 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Creating a new notifier for address VideoStore.ECommerce-DEVMBP@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:31.718 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.ECommerce-DEVMBP'
+2015-02-09 21:09:31.722 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.ECommerce-DEVMBP' does not exist
+2015-02-09 21:09:31.963 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.ECommerce-DEVMBP' already exists, another node probably beat us to it
+2015-02-09 21:09:32.059 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for address VideoStore.ECommerce-DEVMBP@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:32.074 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Creating a new notifier for address VideoStore.ECommerce-DEVMBP.Retries@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:32.078 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.ECommerce-DEVMBP.Retries'
+2015-02-09 21:09:32.082 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.ECommerce-DEVMBP.Retries' does not exist
+2015-02-09 21:09:32.245 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.ECommerce-DEVMBP.Retries' already exists, another node probably beat us to it
+2015-02-09 21:09:32.273 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for address VideoStore.ECommerce-DEVMBP.Retries@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:32.279 INFO  NServiceBus.Satellites.SatelliteLauncher Started 1/1 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2015-02-09 21:09:32.297 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicSubscriptionManager Creating a new notifier for event type OrderCancelled, address VideoStore.Sales@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:32.307 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking existence cache for topic 'VideoStore.Sales.events'
+2015-02-09 21:09:32.311 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking namespace for existance of the topic 'VideoStore.Sales.events'
+2015-02-09 21:09:33.354 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Determined that the topic 'VideoStore.Sales.events' exists
+2015-02-09 21:09:33.362 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking cache for existence of subscription 'VideoStore.ECommerce.OrderCancelled-DEVMBP' on topic 'VideoStore.Sales.events'
+2015-02-09 21:09:34.395 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking namespace for subscription 'VideoStore.ECommerce.OrderCancelled-DEVMBP' on  topic 'VideoStore.Sales.events'
+2015-02-09 21:09:36.490 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Determined cache that the subscription 'VideoStore.ECommerce.OrderCancelled-DEVMBP' on topic 'VideoStore.Sales.events' does not exist
+2015-02-09 21:09:38.633 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Subscription 'VideoStore.ECommerce.OrderCancelled-DEVMBP' on topic 'VideoStore.Sales.events' created
+2015-02-09 21:09:39.720 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for event type OrderCancelled, address VideoStore.Sales@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:39.728 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicSubscriptionManager Creating a new notifier for event type OrderPlaced, address VideoStore.Sales@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:39.734 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking existence cache for topic 'VideoStore.Sales.events'
+2015-02-09 21:09:39.738 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Determined that the topic 'VideoStore.Sales.events' exists
+2015-02-09 21:09:39.749 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking cache for existence of subscription 'VideoStore.ECommerce.OrderPlaced-DEVMBP' on topic 'VideoStore.Sales.events'
+2015-02-09 21:09:39.755 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking namespace for subscription 'VideoStore.ECommerce.OrderPlaced-DEVMBP' on  topic 'VideoStore.Sales.events'
+2015-02-09 21:09:40.836 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Determined cache that the subscription 'VideoStore.ECommerce.OrderPlaced-DEVMBP' on topic 'VideoStore.Sales.events' does not exist
+2015-02-09 21:09:41.156 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Subscription 'VideoStore.ECommerce.OrderPlaced-DEVMBP' on topic 'VideoStore.Sales.events' created
+2015-02-09 21:09:41.231 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for event type OrderPlaced, address VideoStore.Sales@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:41.235 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusTopicSubscriptionManager Creating a new notifier for event type DownloadIsReady, address VideoStore.ContentManagement@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:41.240 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking existence cache for topic 'VideoStore.ContentManagement.events'
+2015-02-09 21:09:41.245 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking namespace for existance of the topic 'VideoStore.ContentManagement.events'
+2015-02-09 21:09:41.311 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Determined that the topic 'VideoStore.ContentManagement.events' exists
+2015-02-09 21:09:41.315 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking cache for existence of subscription 'VideoStore.ECommerce.DownloadIsReady-DEVMBP' on topic 'VideoStore.ContentManagement.events'
+2015-02-09 21:09:41.320 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Checking namespace for subscription 'VideoStore.ECommerce.DownloadIsReady-DEVMBP' on  topic 'VideoStore.ContentManagement.events'
+2015-02-09 21:09:42.321 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Determined cache that the subscription 'VideoStore.ECommerce.DownloadIsReady-DEVMBP' on topic 'VideoStore.ContentManagement.events' does not exist
+2015-02-09 21:09:42.639 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusSubscriptionCreator Subscription 'VideoStore.ECommerce.DownloadIsReady-DEVMBP' on topic 'VideoStore.ContentManagement.events' created
+2015-02-09 21:09:42.738 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusDequeueStrategy Started tracking new notifier for event type DownloadIsReady, address VideoStore.ContentManagement@Endpoint=sb://seanfeldman-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=XYm+HDsSR3eFvR0oejERuAUH81hyaENTgwdUeWN/MS4=
+2015-02-09 21:09:59.612 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.Sales'
+2015-02-09 21:09:59.616 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'VideoStore.Sales'
+2015-02-09 21:09:59.739 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.Sales' exists
+2015-02-09 21:09:59.755 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.Sales' already exists, skipping creation
+2015-02-09 21:10:05.149 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'audit'
+2015-02-09 21:10:05.153 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking namespace for existance of the queue 'audit'
+2015-02-09 21:10:05.255 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'audit' exists
+2015-02-09 21:10:05.261 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'audit' already exists, skipping creation
+2015-02-09 21:10:09.908 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.Sales'
+2015-02-09 21:10:09.913 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.Sales' exists
+2015-02-09 21:10:09.917 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.Sales' already exists, skipping creation
+2015-02-09 21:10:12.678 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'audit'
+2015-02-09 21:10:12.695 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'audit' exists
+2015-02-09 21:10:12.712 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'audit' already exists, skipping creation
+2015-02-09 21:10:15.206 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'VideoStore.Sales'
+2015-02-09 21:10:15.213 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'VideoStore.Sales' exists
+2015-02-09 21:10:15.219 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'VideoStore.Sales' already exists, skipping creation
+2015-02-09 21:10:17.970 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'audit'
+2015-02-09 21:10:17.976 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'audit' exists
+2015-02-09 21:10:17.985 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'audit' already exists, skipping creation
+2015-02-09 21:10:54.145 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Checking existence cache for 'audit'
+2015-02-09 21:10:54.149 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Determined that the queue 'audit' exists
+2015-02-09 21:10:54.156 INFO  NServiceBus.Azure.Transports.WindowsAzureServiceBus.AzureServiceBusQueueCreator Queue 'audit' already exists, skipping creation

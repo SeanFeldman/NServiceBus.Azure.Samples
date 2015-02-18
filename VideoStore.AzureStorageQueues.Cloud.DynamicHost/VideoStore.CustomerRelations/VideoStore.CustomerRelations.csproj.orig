@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{15E85589-DBE6-4357-B869-CA8769004F9D}</ProjectGuid>
+    <ProjectGuid>{E754D94B-1B1E-4B9F-9A29-3DC78A04BAB0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VideoStore.Operations</RootNamespace>
-    <AssemblyName>VideoStore.Operations</AssemblyName>
+    <RootNamespace>VideoStore.CustomerRelations</RootNamespace>
+    <AssemblyName>VideoStore.CustomerRelations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <RoleType>Worker</RoleType>
@@ -37,7 +37,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ionic.Zip">
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.Hosting.Azure.6.2.0\lib\net45\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
@@ -77,23 +78,28 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NServiceBus.Azure, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NServiceBus.Azure.6.1.3\lib\net45\NServiceBus.Azure.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.Azure.6.2.0\lib\net45\NServiceBus.Azure.dll</HintPath>
     </Reference>
     <Reference Include="NServiceBus.Azure.Transports.WindowsAzureStorageQueues, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.6.1.3\lib\net45\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
+<<<<<<< HEAD
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.6.2.0\lib\net45\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
+=======
+      <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.6.1.3\lib\net45\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.6.2.0-beta0001\lib\net45\NServiceBus.Azure.Transports.WindowsAzureStorageQueues.dll</HintPath>
+>>>>>>> master
     </Reference>
     <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.5.2.0\lib\net45\NServiceBus.Core.dll</HintPath>
     </Reference>
     <Reference Include="NServiceBus.Hosting.Azure, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NServiceBus.Hosting.Azure.6.1.3\lib\net45\NServiceBus.Hosting.Azure.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.Hosting.Azure.6.2.0\lib\net45\NServiceBus.Hosting.Azure.dll</HintPath>
     </Reference>
     <Reference Include="NServiceBus.Hosting.Azure.HostProcess, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NServiceBus.Hosting.Azure.HostProcess.6.1.3\lib\net45\NServiceBus.Hosting.Azure.HostProcess.exe</HintPath>
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NServiceBus.Hosting.Azure.HostProcess.6.2.0\lib\net45\NServiceBus.Hosting.Azure.HostProcess.exe</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -116,8 +122,10 @@
       <Link>DebugFlagMutator.cs</Link>
     </Compile>
     <Compile Include="EndpointConfig.cs" />
+    <Compile Include="OrderAcceptedHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProvisionDownloadHandler.cs" />
+    <Compile Include="SendLimitedTimeOffer.cs" />
+    <Compile Include="SendWelcomePacket.cs" />
     <Compile Include="WorkerRole.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,9 +133,7 @@
       <Link>NServiceBus.Hosting.Azure.HostProcess.exe.config</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="app.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
