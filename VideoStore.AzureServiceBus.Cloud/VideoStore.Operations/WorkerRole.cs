@@ -17,7 +17,7 @@ namespace VideoStore.Operations
 
         public override void OnStop()
         {
-            nsb.Start();
+            nsb.Stop();
             base.OnStop();
         }
     }
